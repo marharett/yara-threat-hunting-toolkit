@@ -152,7 +152,7 @@ def save_report(matches, target, output_file):
     with open(output_file, 'w') as f:
         json.dump(report, f, indent=2)
     
-    print(f"\n📄 Report saved to: {output_file}")
+    print(f"\n Report saved to: {output_file}")
 
 def print_summary(matches, target):
     """Print scan summary"""
@@ -222,7 +222,7 @@ def main():
         return 1
     
     print("\n" + "=" * 60)
-    print("🛡️  YARA THREAT SCANNER")
+    print("  YARA THREAT SCANNER")
     print("=" * 60)
     print(f"   Target: {target}")
     print(f"   Rules directory: {rules_dir}")
